@@ -1,0 +1,19 @@
+<div class="contenido">
+    <div class="caja">
+        <div class="titulo">
+            <img src="../../assets/logo.png" alt="">
+        </div>
+        <p>Iniciar Sesión</p>
+        <form action="submit" class="formulario-login">
+            <div class="input">
+                <label for="email">Correo electrónico: </label>
+                <input type="email" placeholder="Correo electrónico" id="email" [(ngModel)]="emailInput" name="email">
+            </div>
+            <div class="input">
+                <label for="password">Contraseña: </label>
+                <input type="password" placeholder="Contraseña" id="password" [(ngModel)]="passwordInput" name="password">
+            </div>
+            <button (click)="submit()">Iniciar Sesión</button>
+        </form>
+    </div>
+</div>

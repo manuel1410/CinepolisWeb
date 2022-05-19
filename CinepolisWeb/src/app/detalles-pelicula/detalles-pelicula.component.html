@@ -1,0 +1,24 @@
+<app-header></app-header>
+<div class="contenido">
+    <div class="card" *ngIf="pelicula">
+        <img src="{{pelicula.url}}" alt="">
+
+            <div class="info-pelicula">
+              <h3>Título: <span class="texto">{{pelicula.titulo}}</span> </h3>
+              <h3>Director: <span class="texto">{{pelicula.director}}</span></h3>
+              <h3 *ngIf="pelicula.actores">Actores: <span *ngFor="let actor of pelicula.actores" class="texto"> {{actor}}</span></h3>
+              <h3>Duración: <span class="texto">{{pelicula.duracion}} minutos</span></h3>
+              <h3>Generos: <span class="texto" *ngFor="let genero of pelicula.generos"> {{genero}}</span></h3>
+              <h3>Idiomas: <span class="texto" *ngFor="let idioma of pelicula.idiomas">{{idioma}} </span></h3>
+              <h3>Edad mínima: <span class="texto">{{pelicula.edad_min}} años</span></h3>
+              <h3>Sala: <span class="texto">{{pelicula.Sala}}</span></h3>
+              <h3>Hora: <span class="texto">{{pelicula.Hora}}</span></h3>
+            </div>
+            <div class="botones-compra">
+              <button class="boton-compra" (click)="comprarEntradas()">
+                <p>Comprar entradas</p>
+              </button>
+            </div>
+
+    </div>
+</div>
