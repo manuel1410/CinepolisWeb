@@ -383,7 +383,7 @@ export class DataService {
 
     var matrizAsientos = [];
 
-    for(let i=0; i < 100; i++){
+    for(let i=0; i < 104; i++){
       var asiento = {id: i, num_asiento: i+1, reservado: false, persona: ""}
       matrizAsientos.push(asiento);
     }

@@ -11,7 +11,8 @@ import {provideFirestore, getFirestore} from '@angular/fire/firestore';
 import { LoginUserComponent } from './login-user/login-user.component';
 import { InicioUserComponent } from './inicio-user/inicio-user.component';
 import { DetallesPeliculaComponent } from './detalles-pelicula/detalles-pelicula.component';
-import { HeaderComponent } from './header/header.component'
+import { HeaderComponent } from './header/header.component';
+import { ComprarEntradasComponent } from './comprar-entradas/comprar-entradas.component'
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HeaderComponent } from './header/header.component'
     LoginUserComponent,
     InicioUserComponent,
     DetallesPeliculaComponent,
-    HeaderComponent
+    HeaderComponent,
+    ComprarEntradasComponent
   ],
   imports: [
     BrowserModule,
