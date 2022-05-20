@@ -19,6 +19,6 @@ export class DetallesPeliculaComponent implements OnInit {
 
 
   comprarEntradas() {
-    this.router.navigateByUrl('inicio/detalles/reservar');
+    this.router.navigateByUrl('inicio/detallespelicula/reservar');
   }
 }

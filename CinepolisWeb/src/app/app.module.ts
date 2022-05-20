@@ -12,7 +12,9 @@ import { LoginUserComponent } from './login-user/login-user.component';
 import { InicioUserComponent } from './inicio-user/inicio-user.component';
 import { DetallesPeliculaComponent } from './detalles-pelicula/detalles-pelicula.component';
 import { HeaderComponent } from './header/header.component';
-import { ComprarEntradasComponent } from './comprar-entradas/comprar-entradas.component'
+import { ComprarEntradasComponent } from './comprar-entradas/comprar-entradas.component';
+import { ComidasUserComponent } from './comidas-user/comidas-user.component';
+import { DetallesComidaComponent } from './detalles-comida/detalles-comida.component'
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { ComprarEntradasComponent } from './comprar-entradas/comprar-entradas.co
     InicioUserComponent,
     DetallesPeliculaComponent,
     HeaderComponent,
-    ComprarEntradasComponent
+    ComprarEntradasComponent,
+    ComidasUserComponent,
+    DetallesComidaComponent
   ],
   imports: [
     BrowserModule,

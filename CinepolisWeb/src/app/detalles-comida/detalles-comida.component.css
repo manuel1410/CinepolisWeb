@@ -66,6 +66,16 @@
     background-color: #FFCD34;
 }
 
+.card input {
+    color: black;
+}
+
 .card .botones-compra button:hover {
     background-color: #c09925;
+}
+
+.aviso p{
+    margin-left: 50px;
+    margin-top: 120px;
+    color: rgb(148, 7, 7);
 }

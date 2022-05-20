@@ -19,11 +19,11 @@ export class HeaderComponent implements OnInit {
   }
 
   comidas() {
-
+    this.router.navigateByUrl('inicio/comidas');
   }
 
   carrito() {
-
+    this.router.navigateByUrl('/inicio/carrito');
   }
 
 }

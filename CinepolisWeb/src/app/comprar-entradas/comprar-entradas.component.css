@@ -168,7 +168,8 @@
 }
 
 .aviso p{
+    position: relative;
     margin-left: 50px;
-    margin-top: 50px;
+    top: 150px;
     color: rgb(148, 7, 7);
 }

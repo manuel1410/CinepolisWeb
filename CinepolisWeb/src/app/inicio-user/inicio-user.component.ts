@@ -31,7 +31,7 @@ export class InicioUserComponent implements OnInit {
 
   detallesPelicula(item) {
     this.dataservice.setPeliculaLocal(item);
-    this.router.navigateByUrl('inicio/detalles');
+    this.router.navigateByUrl('inicio/detallespelicula');
   }
 
 }
