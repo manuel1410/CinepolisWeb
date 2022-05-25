@@ -22,7 +22,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 30%;
-    height: 70%;
+    height: 75%;
     background-color: rgba(0, 0, 0, 0.5);
     border: 3px solid #FFCD34;
     border-radius: 20px;
@@ -77,10 +77,10 @@
     text-align: center;
 }
 
-.contenido .caja .formulario-login button {
+.contenido .caja button {
     position: relative;
     left: 50%;
-    top: 5%;
+    top: -70px;
     transform: translateX(-50%);
     width: 300px;
     height: 70px;
@@ -89,6 +89,17 @@
     background-color: #FFCD34;
 }
 
-.contenido .caja .formulario-login button:hover {
+.contenido .caja button:hover {
     background-color: #c09925;
+}
+
+.contenido .caja .formulario-login .enlaces{
+    text-align: center;
+}
+
+.contenido .caja .formulario-login .enlaces a {
+    cursor: pointer;
+    text-decoration: underline;
+    position: relative;
+    font-size: 20px;
 }

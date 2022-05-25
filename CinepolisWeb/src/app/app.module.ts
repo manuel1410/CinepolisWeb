@@ -14,7 +14,8 @@ import { DetallesPeliculaComponent } from './detalles-pelicula/detalles-pelicula
 import { HeaderComponent } from './header/header.component';
 import { ComprarEntradasComponent } from './comprar-entradas/comprar-entradas.component';
 import { ComidasUserComponent } from './comidas-user/comidas-user.component';
-import { DetallesComidaComponent } from './detalles-comida/detalles-comida.component'
+import { DetallesComidaComponent } from './detalles-comida/detalles-comida.component';
+import { CarritoComponent } from './carrito/carrito.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DetallesComidaComponent } from './detalles-comida/detalles-comida.compo
     HeaderComponent,
     ComprarEntradasComponent,
     ComidasUserComponent,
-    DetallesComidaComponent
+    DetallesComidaComponent,
+    CarritoComponent
   ],
   imports: [
     BrowserModule,

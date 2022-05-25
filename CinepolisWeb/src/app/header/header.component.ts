@@ -23,7 +23,7 @@ export class HeaderComponent implements OnInit {
   }
 
   carrito() {
-    this.router.navigateByUrl('/inicio/carrito');
+    this.router.navigateByUrl('inicio/carrito');
   }
 
 }

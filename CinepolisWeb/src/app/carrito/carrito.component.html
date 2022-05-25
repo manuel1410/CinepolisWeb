@@ -1,0 +1,43 @@
+<app-header></app-header>
+<div class="contenido">
+
+    <div class="sin-items" *ngIf="itemsFlag">
+        <p>No hay items en el carrito de compras</p>
+    </div>
+
+    <div class="card-pelicula" *ngFor="let item of carritoArrayPeliculas; let i = index">
+        <img [src]="item.url" id="imagen-pelicula">
+        <div class="texto-superior">
+            <h4>Película: <span class="texto-descripcion">{{item.nombre}}</span></h4>
+            <h4>Sala: <span class="texto-descripcion">{{item.sala}}</span> </h4>
+            <h4>Hora: <span class="texto-descripcion">{{item.hora}}</span> </h4>
+          </div>
+          <div class="texto-inferior">
+            <h4>Entradas</h4>
+            <P class="texto-descripcion">Niños:   {{item.cantidadNinos}}</P> 
+            <P class="texto-descripcion">Adultos:   {{item.cantidadAdultos}}</P>
+            <P class="texto-descripcion">Adultos Mayores:   {{item.cantidadAdultosMayores}}</P>
+            <div class="detalles">
+              <h4>Num asientos: <span class="texto-descripcion">{{item.numAsientos}}</span></h4>
+              <h4>Total: <span class="texto-descripcion">₡{{item.precioTotal}}</span></h4>
+            </div>
+          </div>
+          <button id="basurero-icon-button" (click)="eliminarPelicula(i)"> Eliminar</button>
+    </div>
+
+    <div class="card-comida" *ngFor="let item of carritoArrayComidas; let i = index">
+        <img [src]="item.url" id="imagen-comida">
+
+        <div class="texto-superior">
+            <h4>Orden: <span class="texto-descripcion">{{item.nombre}}</span></h4>
+            <h4>Cantidad: <span class="texto-descripcion">{{item.cantidad}}</span></h4>
+            <h4>Precio c/u: <span class="texto-descripcion">{{item.precioUnitario}}</span></h4>
+            <h4>Precio Total: <span class="texto-descripcion">{{item.precioTotal}}</span></h4>
+        </div>
+        <button id="basurero-icon-button-comida" (click)="eliminarComida(i)">Eliminar</button>
+    </div>
+    
+    <button *ngIf="!itemsFlag" (click)="confirmarCarrito()" id="confirmar">Confirmar</button>
+
+
+</div>
