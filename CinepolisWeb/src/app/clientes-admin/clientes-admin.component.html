@@ -1,0 +1,15 @@
+<app-header-admin></app-header-admin>
+<div class="contenido">
+    <button id="agregar" (click)="agregarCliente()">Agregar Cliente</button>
+    <div class="grid">
+        <button class="card" *ngFor="let item of clientes; let i = index" (click)="modificar(i)">
+            <div class="info">
+                <h4>Nombre: <span class="texto-descripcion">{{item.nombre}}</span></h4>
+                <h4>Apellido: <span class="texto-descripcion">{{item.apellido1}}</span></h4>
+                <h4>Segundo Apellido: <span class="texto-descripcion">{{item.apellido2}}</span></h4>
+                <h4>Correo Electrónico: <span class="texto-descripcion">{{item.correo}}</span></h4>
+            </div>
+        <button (click)="eliminarCliente(i)">Eliminar</button>
+        </button>
+    </div>
+</div>

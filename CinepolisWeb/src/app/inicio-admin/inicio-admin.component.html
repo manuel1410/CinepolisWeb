@@ -1,0 +1,11 @@
+<app-header-admin></app-header-admin>
+<div class="contenido">
+    <button id="agregar" (click)="agregarPelicula()">Agregar película</button>
+    <div class="grid">
+        <button class="card" *ngFor="let item of peliculas; let i = index" (click)="modificar(i)">
+            <img src="{{item.url}}" alt="">
+            <p>{{item.titulo}}</p>
+            <button (click)="eliminarPelicula(i)">Eliminar</button>
+        </button>
+    </div>
+</div>

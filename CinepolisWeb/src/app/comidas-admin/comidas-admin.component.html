@@ -1,0 +1,41 @@
+<app-header-admin></app-header-admin>
+<div class="contenido">
+    <div *ngIf="!filtro_menu">
+        <div class="botones">
+            <button id="filtro" (click)="filtrar()">Filtar</button>
+            <button id="agregar" (click)="agregarComida()">Agregar Alimento</button>
+        </div>
+        <div class="grid">
+            <button class="card" *ngFor="let item of comidas; let i = index" (click)="modificar(i)">
+                <img src="{{item.url}}" alt="">
+                <p>{{item.nombre}}</p>
+                <button (click)="eliminarComida(i)">Eliminar</button>
+            </button>
+        </div>
+    </div>
+
+    <div *ngIf="filtro_menu" class="menufiltros">
+        <div class="botones">
+        <button id="filtro" (click)="devolverseFiltros()">Filtar</button>
+        </div>
+
+        <div class="filtros">
+            <label class="switch"> <span class="texto">Comidas</span>
+                <input type="checkbox" [(ngModel)]="comidasSwitch">
+                <span class="slider round"></span>
+            </label>
+
+            <label class="switch"> <span class="texto">Bebidas</span>
+                <input type="checkbox" [(ngModel)]="bebidasSwitch">
+                <span class="slider round"></span>
+              </label>
+
+              <label class="switch"> <span class="texto">Combos</span>
+                <input type="checkbox" [(ngModel)]="combosSwitch">
+                <span class="slider round"></span>
+              </label>
+
+        </div>
+    </div>
+
+</div>

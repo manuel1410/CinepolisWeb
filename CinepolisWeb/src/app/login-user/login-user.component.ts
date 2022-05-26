@@ -38,4 +38,12 @@ export class LoginUserComponent implements OnInit {
 
   }
 
+  admin() {
+    this.router.navigateByUrl('loginadmin');
+  }
+
+  register() {
+    this.router.navigateByUrl('register');
+  }
+
 }

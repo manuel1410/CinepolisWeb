@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,7 +15,13 @@ import { HeaderComponent } from './header/header.component';
 import { ComprarEntradasComponent } from './comprar-entradas/comprar-entradas.component';
 import { ComidasUserComponent } from './comidas-user/comidas-user.component';
 import { DetallesComidaComponent } from './detalles-comida/detalles-comida.component';
-import { CarritoComponent } from './carrito/carrito.component'
+import { CarritoComponent } from './carrito/carrito.component';
+import { RegisterUserComponent } from './register-user/register-user.component';
+import { LoginAdminComponent } from './login-admin/login-admin.component';
+import { InicioAdminComponent } from './inicio-admin/inicio-admin.component';
+import { HeaderAdminComponent } from './header-admin/header-admin.component';
+import { ComidasAdminComponent } from './comidas-admin/comidas-admin.component';
+import { ClientesAdminComponent } from './clientes-admin/clientes-admin.component'
 
 @NgModule({
   declarations: [
@@ -27,12 +33,19 @@ import { CarritoComponent } from './carrito/carrito.component'
     ComprarEntradasComponent,
     ComidasUserComponent,
     DetallesComidaComponent,
-    CarritoComponent
+    CarritoComponent,
+    RegisterUserComponent,
+    LoginAdminComponent,
+    InicioAdminComponent,
+    HeaderAdminComponent,
+    ComidasAdminComponent,
+    ClientesAdminComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore())
   ],
