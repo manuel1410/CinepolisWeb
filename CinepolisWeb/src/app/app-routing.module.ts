@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AgregarPeliculaComponent } from './agregar-pelicula/agregar-pelicula.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { ClientesAdminComponent } from './clientes-admin/clientes-admin.component';
 import { ComidasAdminComponent } from './comidas-admin/comidas-admin.component';
@@ -11,6 +12,7 @@ import { InicioAdminComponent } from './inicio-admin/inicio-admin.component';
 import { InicioUserComponent } from './inicio-user/inicio-user.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { LoginUserComponent } from './login-user/login-user.component';
+import { ModificarPeliculaComponent } from './modificar-pelicula/modificar-pelicula.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
 
 const routes: Routes = [
@@ -25,7 +27,9 @@ const routes: Routes = [
   {path: 'loginadmin', component: LoginAdminComponent},
   {path: 'inicioadmin', component: InicioAdminComponent},
   {path: 'inicioadmin/comidas', component: ComidasAdminComponent},
-  {path: 'inicioadmin/clientes', component: ClientesAdminComponent}
+  {path: 'inicioadmin/clientes', component: ClientesAdminComponent},
+  {path: 'inicioadmin/modificarpelicula', component: ModificarPeliculaComponent},
+  {path: 'inicioadmin/agregarpelicula', component: AgregarPeliculaComponent}
 ];
 
 @NgModule({

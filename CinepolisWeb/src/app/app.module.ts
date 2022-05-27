@@ -21,7 +21,9 @@ import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { InicioAdminComponent } from './inicio-admin/inicio-admin.component';
 import { HeaderAdminComponent } from './header-admin/header-admin.component';
 import { ComidasAdminComponent } from './comidas-admin/comidas-admin.component';
-import { ClientesAdminComponent } from './clientes-admin/clientes-admin.component'
+import { ClientesAdminComponent } from './clientes-admin/clientes-admin.component';
+import { ModificarPeliculaComponent } from './modificar-pelicula/modificar-pelicula.component';
+import { AgregarPeliculaComponent } from './agregar-pelicula/agregar-pelicula.component'
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { ClientesAdminComponent } from './clientes-admin/clientes-admin.componen
     InicioAdminComponent,
     HeaderAdminComponent,
     ComidasAdminComponent,
-    ClientesAdminComponent
+    ClientesAdminComponent,
+    ModificarPeliculaComponent,
+    AgregarPeliculaComponent
   ],
   imports: [
     BrowserModule,

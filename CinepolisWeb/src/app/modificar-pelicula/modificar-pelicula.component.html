@@ -1,0 +1,45 @@
+<app-header-admin></app-header-admin>
+<div class="contenido">
+    <div class="card" *ngIf="pelicula">
+        <img src="{{pelicula.url}}" alt="">
+
+            <div class="info-pelicula">
+              <h3>Título: <span class="texto">{{pelicula.titulo}}</span> </h3>
+              <h3>Director: <span class="texto">{{pelicula.director}}</span></h3>
+              <h3 *ngIf="pelicula.actores">Actores: <span *ngFor="let actor of pelicula.actores" class="texto"> {{actor}}</span></h3>
+              <h3>Duración: <span class="texto">{{pelicula.duracion}} minutos</span></h3>
+              <h3>Generos: <span class="texto" *ngFor="let genero of pelicula.generos"> {{genero}}</span></h3>
+              <h3>Idiomas: <span class="texto" *ngFor="let idioma of pelicula.idiomas">{{idioma}} </span></h3>
+              <h3>Edad mínima: <span class="texto">{{pelicula.edad_min}} años</span></h3>
+              <h3>Sala: <span class="texto">{{pelicula.Sala}}</span></h3>
+              <h3>Hora: <span class="texto">{{pelicula.Hora}}</span></h3>
+            
+
+            <p></p>
+            <!-- /*SECCION INPUTS*/ -->
+            <form action="submit" class="form-register">
+            <h3>Título: <span class="texto-input"> <input id="input-titulo" type="text" class="input-field" [(ngModel)]="inputTitulo" name="input-titulo" placeholder="Título"></span> </h3>
+            <h3>Director: <span class="texto-input"><input id="input-director" type="text" class="input-field" [(ngModel)]="inputDirector" name="input-director" placeholder="Director"></span></h3>
+            <h3 *ngIf="pelicula.actores">Actores: <span class="texto-input"><input id="input-actores" type="text" class="input-field" [(ngModel)]="inputActores" name="input-actores" placeholder="Actores"></span></h3>
+            <h3>Duración: <span class="texto-input"><input id="input-duracion" type="text" class="input-field" [(ngModel)]="inputDuracion" name="input-duracion" placeholder="Duarción"></span></h3>
+            <h3>Generos: <span class="texto-input"><input id="input-generos" type="text" class="input-field" [(ngModel)]="inputGeneros" name="input-generos" placeholder="Géneros"></span></h3>
+            <h3>Idiomas: <span class="texto-input"><input id="input-idiomas" type="text" class="input-field" [(ngModel)]="inputIdiomas" name="input-idiomas" placeholder="Idiomas"></span></h3>
+            <h3>Edad mínima: <span class="texto-input"><input id="input-edad" type="number" class="input-field" [(ngModel)]="inputEdad" name="input-edad" placeholder="Edad" min="0" max="100"></span></h3>
+            <h3>Sala: <span class="texto-input"><input id="input-sala" type="text" class="input-field" [(ngModel)]="inputSala" name="input-sala" placeholder="Sala"></span></h3>
+            <h3>Hora: <span class="texto-input"><input id="input-hora" type="text" class="input-field" [(ngModel)]="inputHora" name="input-hora" placeholder="Hora"></span></h3>
+            <h3>Imagen url: <span class="texto-input"><input id="input-url" type="text" class="input-field" [(ngModel)]="inputImagen" name="input-url" placeholder="url"></span></h3>
+            <h3>Precio niños: <span class="texto-input"><input id="input-precio-nino" type="number" class="input-field" [(ngModel)]="inputPrecioNino" name="input-precio-nino" placeholder="Precio" min="0"></span></h3>
+            <h3>Precio adultos: <span class="texto-input"><input id="input-precio-adulto" type="number" class="input-field" [(ngModel)]="inputPrecioAdulto" name="input-precio-adulto" placeholder="Precio" min="0"></span></h3>
+            <h3>Precio adultos mayores: <span class="texto-input"><input id="input-precio-adulto-mayor" type="number" class="input-field" [(ngModel)]="inputPrecioAdultoMayor" name="input-adulto-mayor" placeholder="Precio" min="0"></span></h3>
+            </form>
+        </div>
+
+
+            <div class="botones-compra">
+              <button class="boton-compra" (click)="modificar()">
+                <p>Modificar</p>
+              </button>
+            </div>
+
+    </div>
+</div>
