@@ -1,0 +1,31 @@
+<app-header-admin></app-header-admin>
+
+<div class="contenido">
+    <div class="card">
+
+            <div class="info-pelicula">
+
+                <form action="submit" class="form-register">
+                    <h3>Nombre: <span class="texto-input"><input id="input-nombre" type="text" class="input-field" [(ngModel)]="inputNombre" name="input-nombre" placeholder="Nombre"></span> </h3>
+                    <h3>Primer Apellido: <span class="texto-input"><input id="input-apellido1" type="text" class="input-field" [(ngModel)]="inputApellido1" name="input-apellido1" placeholder="Primer Apellido"></span></h3>
+                    <h3>Segundo Apellido: <span class="texto-input"><input id="input-apellido2" type="text" class="input-field" [(ngModel)]="inputApellido2" name="input-apellido2" placeholder="Segundo Apellido"></span></h3>
+                    <h3>Correo: <span class="texto-input"><input id="input-email" type="email" class="input-field" [(ngModel)]="inputEmail" name="input-email" placeholder="Correo electrónico"></span></h3>
+                    <h3>Fecha de Nacimiento: <span class="texto-input"><input id="input-fechaNacimiento" type="date" class="input-field" [(ngModel)]="inputFechaNacimiento" name="input-fechaNacimiento"></span></h3>
+                    <h3>Número de cédula: <span class="texto-input"> <input id="input-cedula" type="text" class="input-field" [(ngModel)]="inputCedula" name="input-cedula" placeholder="Número de cédula"></span></h3>
+                    <h3>Vacunación: <span class="texto-input"> <input id="input-vacunas" type="number" class="input-field" [(ngModel)]="inputVacunas" name="input-vacunas" placeholder="Cantidad de vacunas COVID-19" min="0" max="2"></span></h3>
+                </form>
+
+            </div>
+
+            <div class="aviso">
+                <p *ngIf="aviso">{{aviso}}</p>
+            </div>
+            
+            <div class="botones-compra">
+              <button class="boton-compra" (click)="registrar()">
+                <p>Regitsrar</p>
+              </button>
+            </div>
+
+    </div>
+</div>

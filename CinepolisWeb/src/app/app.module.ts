@@ -23,7 +23,11 @@ import { HeaderAdminComponent } from './header-admin/header-admin.component';
 import { ComidasAdminComponent } from './comidas-admin/comidas-admin.component';
 import { ClientesAdminComponent } from './clientes-admin/clientes-admin.component';
 import { ModificarPeliculaComponent } from './modificar-pelicula/modificar-pelicula.component';
-import { AgregarPeliculaComponent } from './agregar-pelicula/agregar-pelicula.component'
+import { AgregarPeliculaComponent } from './agregar-pelicula/agregar-pelicula.component';
+import { ModificarComidaComponent } from './modificar-comida/modificar-comida.component';
+import { AgregarComidaComponent } from './agregar-comida/agregar-comida.component';
+import { ModificarClienteComponent } from './modificar-cliente/modificar-cliente.component';
+import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.component'
 
 @NgModule({
   declarations: [
@@ -43,7 +47,11 @@ import { AgregarPeliculaComponent } from './agregar-pelicula/agregar-pelicula.co
     ComidasAdminComponent,
     ClientesAdminComponent,
     ModificarPeliculaComponent,
-    AgregarPeliculaComponent
+    AgregarPeliculaComponent,
+    ModificarComidaComponent,
+    AgregarComidaComponent,
+    ModificarClienteComponent,
+    AgregarClienteComponent
   ],
   imports: [
     BrowserModule,

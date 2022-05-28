@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AgregarClienteComponent } from './agregar-cliente/agregar-cliente.component';
+import { AgregarComidaComponent } from './agregar-comida/agregar-comida.component';
 import { AgregarPeliculaComponent } from './agregar-pelicula/agregar-pelicula.component';
 import { CarritoComponent } from './carrito/carrito.component';
 import { ClientesAdminComponent } from './clientes-admin/clientes-admin.component';
@@ -12,6 +14,8 @@ import { InicioAdminComponent } from './inicio-admin/inicio-admin.component';
 import { InicioUserComponent } from './inicio-user/inicio-user.component';
 import { LoginAdminComponent } from './login-admin/login-admin.component';
 import { LoginUserComponent } from './login-user/login-user.component';
+import { ModificarClienteComponent } from './modificar-cliente/modificar-cliente.component';
+import { ModificarComidaComponent } from './modificar-comida/modificar-comida.component';
 import { ModificarPeliculaComponent } from './modificar-pelicula/modificar-pelicula.component';
 import { RegisterUserComponent } from './register-user/register-user.component';
 
@@ -29,7 +33,11 @@ const routes: Routes = [
   {path: 'inicioadmin/comidas', component: ComidasAdminComponent},
   {path: 'inicioadmin/clientes', component: ClientesAdminComponent},
   {path: 'inicioadmin/modificarpelicula', component: ModificarPeliculaComponent},
-  {path: 'inicioadmin/agregarpelicula', component: AgregarPeliculaComponent}
+  {path: 'inicioadmin/agregarpelicula', component: AgregarPeliculaComponent},
+  {path: 'inicioadmin/comidas/modificarcomida', component: ModificarComidaComponent},
+  {path: 'inicioadmin/comidas/agregarcomida', component: AgregarComidaComponent},
+  {path: 'inicioadmin/clientes/modificarcliente', component: ModificarClienteComponent},
+  {path: 'inicioadmin/clientes/agregarcliente', component: AgregarClienteComponent}
 ];
 
 @NgModule({

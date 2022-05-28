@@ -1,0 +1,30 @@
+<app-header-admin></app-header-admin>
+
+<div class="contenido">
+    <div class="card">
+        
+
+            <div class="info-pelicula">
+
+                <form action="submit" class="form-register">
+                    <h3>Artículo: <span class="texto-input"><input id="input-articulo" type="text" class="input-field" [(ngModel)]="inputArticulo" name="input-articulo" placeholder="Nombre"></span> </h3>
+                    <h3>Tipo: <span class="texto-input"><input id="input-tipo" type="text" class="input-field" [(ngModel)]="inputTipo" name="input-tipo" placeholder="Tipo"></span></h3>
+                    <h3>Precio: <span class="texto-input"><input id="input-precio" type="number" class="input-field" [(ngModel)]="inputPrecio" name="input-precio" placeholder="Precio" min="0"></span></h3>
+                    <h3>Cantidad disponible: <span class="texto-input"> <input id="input-cantidad" type="number" class="input-field" [(ngModel)]="inputCantidad" name="input-cantidad" placeholder="Cantidad disponible" min="0"></span></h3>
+                    <h3>Imagen url: <span class="texto-input"><input id="input-url" type="text" class="input-field" [(ngModel)]="inputImagen" name="input-url" placeholder="url"></span></h3>
+                </form>
+
+            </div>
+
+            <div class="aviso">
+                <p *ngIf="aviso">{{aviso}}</p>
+            </div>
+            
+            <div class="botones-compra">
+              <button class="boton-compra" (click)="agregar()">
+                <p>Registrar</p>
+              </button>
+            </div>
+
+    </div>
+</div>
