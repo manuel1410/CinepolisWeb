@@ -9,31 +9,7 @@ import { DataService } from '../data.service';
 })
 export class ComprarEntradasComponent implements OnInit {
 
-  pelicula: any = {
-    "Hora": "15:00",
-    "generos": [
-        "aventura"
-    ],
-    "salaFlag": true,
-    "idiomas": [
-        "español"
-    ],
-    "deleted": false,
-    "Sala": "Sala 03",
-    "actores": [
-        "eddie"
-    ],
-    "url": "https://previews.dropbox.com/p/thumb/ABj_Pij_N2SB7PCITxwW-AgZZkO8yGNQc-EiSA6orn37yJeWj-7zVp2-ZQktb6xRc4nSp-910nmWU3ounmNQThfLEzJ0G06n48OS4qJXVLL-tnVgsyhX0yzGeU6CvUb6xTUCglYxviSxTn6RiKXjQAHMVTBBD9furn4U1xn9_594_cuOQ0uNZF3jM-NBOoH3Mc-uoAzVDxyCwsrRb_TApVkwu1VOVX5JTXyrRiXLLYajiZEccjL4Lu6MuDd6BISxTaxNus9fvPcBD6DxLzStaL8UqBQOwtxe-XeOjfY9HKLTEXRUSf2Pd4sup9ueJknUjwAJKYvTqs8CNo0YwJmOCrQ_We5TroB1iQyXg9pfN4Tnp4UVxTgV0w0VDPGHKyrKPiA/p.jpeg",
-    "director": "david",
-    "id": "Xn5sNXme1lOhbT0QmPMq",
-    "precio_normal": 3000,
-    "edad_min": 12,
-    "titulo": "animales fantasticos",
-    "duracion": "120",
-    "precio_adultomayor": 2500,
-    "precio_nino": 2000
-};
-
+  pelicula: any;
 
   cantidadAdultosMayores: any;
   cantidadAdultos: any;
@@ -48,7 +24,7 @@ export class ComprarEntradasComponent implements OnInit {
 
   constructor(private dataService: DataService, private router: Router) {
     this.colorsArray = [];
-    //this.pelicula = this.dataService.getPeliculaLocal();
+    this.pelicula = this.dataService.getPeliculaLocal();
     console.log(this.pelicula);
     const salaRef = this.dataService.getSalas();
 
